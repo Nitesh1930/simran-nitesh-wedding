@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#4b071b">
+<title>Simran & Nitesh | Wedding Invitation</title>
+<style>
+:root{--wine:#4b071b;--red:#761b32;--gold:#e9c77b;--cream:#fff4df}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--wine);color:var(--cream);font-family:Georgia,"Times New Roman",serif;text-align:center}
+button,a{font:inherit}
+.hero{min-height:100svh;display:flex;align-items:center;justify-content:center;padding:28px 18px;position:relative;overflow:hidden;background:radial-gradient(ellipse at center,#842c43 0%,#4b071b 65%,#26030e 100%)}
+.hero:before,.hero:after{content:"✦  ❋  ✦";position:absolute;color:#d7ad59;opacity:.35;font-size:32px;letter-spacing:20px}
+.hero:before{top:35px;left:8px;transform:rotate(25deg)}
+.hero:after{bottom:35px;right:8px;transform:rotate(-25deg)}
+.frame{width:min(100%,620px);border:1px solid var(--gold);outline:1px solid #b58b42;outline-offset:7px;padding:38px 22px;background:#4b071bba;box-shadow:0 0 60px #170109}
+.ornament{color:var(--gold);font-size:30px;letter-spacing:8px}
+.eyebrow{letter-spacing:4px;text-transform:uppercase;font:11px Arial,sans-serif;color:var(--gold)}
+h1{font-size:clamp(42px,10vw,76px);font-weight:normal;line-height:1.08;margin:24px 0 14px;color:var(--gold)}
+.amp{font-style:italic;font-size:.65em;color:var(--cream)}
+.subtitle{letter-spacing:3px;font-size:12px;text-transform:uppercase}
+.date{font-size:22px;color:var(--gold);margin:25px 0 8px}
+.btn{display:inline-block;border:1px solid var(--gold);color:var(--wine);background:var(--gold);padding:13px 21px;margin:12px 5px;text-decoration:none;cursor:pointer;transition:.25s}
+.btn:hover{background:var(--cream);transform:translateY(-2px)}
+.btn.outline{background:transparent;color:var(--gold)}
+section{padding:70px 20px}
+section:nth-of-type(odd){background:#fff4df;color:var(--wine)}
+h2{font-size:clamp(30px,7vw,43px);font-weight:normal;color:var(--gold);margin:10px 0 20px}
+section:nth-of-type(odd) h2{color:var(--wine)}
+.flourish{color:#c39b4e;font-size:25px;margin:10px}
+.intro{max-width:650px;margin:auto;line-height:1.9;font-size:17px}
+.names{font-size:clamp(32px,8vw,50px);line-height:1.4}
+.countdown{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin:25px auto}
+.unit{border:1px solid #c39b4e;padding:16px 10px;min-width:76px}
+.unit strong{display:block;font-size:30px;font-weight:normal}
+.unit span{font:10px Arial,sans-serif;letter-spacing:2px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px;max-width:850px;margin:28px auto}
+.card{border:1px solid #c39b4e;padding:25px 15px;background:#fffaf0}
+.card .symbol{font-size:30px}
+.card h3{font-weight:normal;font-size:23px;margin:12px 0}
+.venue{font-size:18px;line-height:1.9}
+footer{padding:30px 15px;color:var(--gold);line-height:1.8}
+.music{position:fixed;right:15px;bottom:15px;z-index:5;border-radius:30px;box-shadow:0 3px 20px #16010a;padding:12px 16px}
+#petals{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:3}
+.petal{position:absolute;top:-30px;color:#e9c77b;animation:fall linear forwards;opacity:.8}
+@keyframes fall{to{transform:translateY(110vh) rotate(600deg);opacity:0}}
+@media(max-width:420px){.frame{padding:32px 14px}.eyebrow{letter-spacing:2px}.unit{min-width:65px}.unit strong{font-size:25px}}
+</style>
+</head>
+<body>
+<div id="petals"></div>
+
+<header class="hero" id="home">
+  <div class="frame">
+    <div class="ornament">❋ ✦ ❋</div>
+    <p class="eyebrow">With the blessings of our families</p>
+    <p>Joyfully invite you to celebrate their wedding</p>
+    <h1>Simran<br><span class="amp">&</span><br>Nitesh</h1>
+    <div class="ornament">❦</div>
+    <p class="subtitle">Two hearts · One beautiful journey</p>
+    <p class="date">25 · November · 2026</p>
+    <p>Belgaum, Karnataka</p>
+    <a href="#invitation" class="btn">Open Invitation ↓</a>
+  </div>
+</header>
+
+<section id="invitation">
+  <div class="flourish">❋ ❦ ❋</div>
+  <p class="eyebrow">A celebration of love</p>
+  <h2>Our Wedding</h2>
+  <p class="intro">Together with our families, we invite you to be part of a beautiful new beginning. Your presence, blessings and love will make our special day even more memorable.</p>
+  <div class="names">Simran Tarale<br><span style="color:#b58b42">&</span><br>Nitesh Sahani</div>
+  <p class="intro">A new chapter begins, a lifetime of memories awaits.</p>
+</section>
+
+<section id="countdown">
+  <p class="eyebrow">The celebration begins in</p>
+  <h2>Countdown to Forever</h2>
+  <div class="countdown">
+    <div class="unit"><strong id="days">--</strong><span>DAYS</span></div>
+    <div class="unit"><strong id="hours">--</strong><span>HOURS</span></div>
+    <div class="unit"><strong id="minutes">--</strong><span>MINUTES</span></div>
+    <div class="unit"><strong id="seconds">--</strong><span>SECONDS</span></div>
+  </div>
+  <p>Wednesday · 25 November 2026</p>
+</section>
+
+<section id="details">
+  <p class="eyebrow">Save the date</p>
+  <h2>The Celebration</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="symbol">❀</div>
+      <h3>Wedding Ceremony</h3>
+      <p>Wednesday, 25 November 2026</p>
+      <p>A day filled with love, traditions and blessings.</p>
+    </article>
+    <article class="card">
+      <div class="symbol">✦</div>
+      <h3>With Love</h3>
+      <p>Family, relatives and friends</p>
+      <p>We look forward to celebrating this special occasion with you.</p>
+    </article>
+  </div>
+  <p style="font-size:13px">Please confirm the event timings with the family before sharing.</p>
+</section>
+
+<section id="venue">
+  <p class="eyebrow">We look forward to welcoming you</p>
+  <h2>Wedding Venue</h2>
+  <div class="flourish">⌖</div>
+  <p class="venue"><strong>Shri Tukaram Maharaj Sanskrutik Bhavan</strong><br>Oriental School Campus, Tilakwadi<br>Belgaum, Karnataka 590006</p>
+  <a class="btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Shri+Tukaram+Maharaj+Sanskrutik+Bhavan+Oriental+School+Campus+Tilakwadi+Belgaum+Karnataka+590006">Get Directions ↗</a>
+</section>
+
+<section>
+  <div class="flourish">❦</div>
+  <h2>Your Presence Is Our Gift</h2>
+  <p class="intro">May our journey be blessed with love, laughter and a lifetime of happiness. We can't wait to celebrate with you!</p>
+  <p style="font-size:24px;color:#b58b42">Simran & Nitesh</p>
+  <a class="btn outline" href="#home">Back to Top ↑</a>
+</section>
+
+<footer>
+  Made with love for Simran & Nitesh<br>
+  <span style="font-size:12px">25 November 2026 · Belgaum</span>
+</footer>
+
+<button class="btn music" id="musicBtn" type="button">♫ Music: Off</button>
+<audio id="weddingMusic" loop preload="none"></audio>
+
+<script>
+const wedding = new Date("2026-11-25T00:00:00+05:30").getTime();
+function updateCountdown(){
+  let diff = wedding - Date.now();
+  if(diff < 0) diff = 0;
+  document.getElementById("days").textContent = Math.floor(diff/86400000);
+  document.getElementById("hours").textContent = Math.floor(diff%86400000/3600000);
+  document.getElementById("minutes").textContent = Math.floor(diff%3600000/60000);
+  document.getElementById("seconds").textContent = Math.floor(diff%60000/1000);
+}
+updateCountdown(); setInterval(updateCountdown,1000);
+
+const petals = document.getElementById("petals");
+function makePetal(){
+  const p=document.createElement("span");
+  p.className="petal"; p.textContent=["✦","❋","✧","❀"][Math.floor(Math.random()*4)];
+  p.style.left=Math.random()*100+"vw";
+  p.style.fontSize=(12+Math.random()*16)+"px";
+  p.style.animationDuration=(7+Math.random()*8)+"s";
+  petals.appendChild(p);
+  setTimeout(()=>p.remove(),16000);
+}
+setInterval(makePetal,650);
+
+const music=document.getElementById("weddingMusic");
+const musicBtn=document.getElementById("musicBtn");
+musicBtn.addEventListener("click",async()=>{
+  if(!music.src){
+    alert("To add wedding music, upload a royalty-free Indian wedding instrumental MP3 to your website and set its filename in the audio tag. See the instructions below.");
+    return;
+  }
+  if(music.paused){
+    try{await music.play();musicBtn.textContent="♫ Music: On";}
+    catch(e){alert("Tap the music button again to start playback.");}
+  }else{
+    music.pause();musicBtn.textContent="♫ Music: Off";
+  }
+});
+</script>
+</body>
+</html>
